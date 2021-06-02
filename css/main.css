@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: url(../images/bg-intro-desktop.png) no-repeat center center fixed;
+  background-size: cover;
+  background-color: #FF7979;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 1440px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.container .box-left {
+  width: 525px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container .box-left h1 {
+  font-weight: bold;
+  font-size: 50px;
+  letter-spacing: -0.56px;
+  line-height: 3.5rem;
+}
+.container .box-left p {
+  margin-top: 30px;
+  margin-right: 30px;
+  line-height: 1.8rem;
+}
+.container .box-right {
+  width: 540px;
+  display: flex;
+  flex-direction: column;
+}
+.container .box-right .btn, .container .box-right form .btn-claim, .container .box-right .btn-try {
+  padding: 15px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+.container .box-right .btn span, .container .box-right form .btn-claim span, .container .box-right .btn-try span {
+  font-weight: bold;
+}
+.container .box-right .btn-try {
+  background-color: #6055a5;
+  margin-bottom: 30px;
+}
+.container .box-right form {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  padding-top: 40px;
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+.container .box-right form .form-control {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.container .box-right form .form-control input {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  border-radius: 5px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 20px;
+  border: 3px solid #f0f0f0;
+  color: #3e3c49;
+}
+.container .box-right form .form-control input.error {
+  color: #FF7979;
+  border: 3px solid #FF7979;
+}
+.container .box-right form .form-control small {
+  visibility: hidden;
+  margin-right: 25px;
+  text-align: right;
+}
+.container .box-right form .form-control small.error {
+  visibility: visible;
+  color: #FF7979;
+}
+.container .box-right form .form-control i {
+  visibility: hidden;
+}
+.container .box-right form .form-control i.warning:before {
+  content: "";
+  background: url("../images/icon-error.svg") no-repeat center center;
+  display: block;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  right: 30px;
+  bottom: 25px;
+}
+.container .box-right form .form-control i.error {
+  visibility: visible;
+}
+.container .box-right form input:focus {
+  outline: 0;
+  border-color: #777;
+}
+.container .box-right form .btn-claim {
+  background-color: #38CC8B;
+  display: block;
+  margin-top: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-transform: uppercase;
+  border: 0;
+  cursor: pointer;
+}
+.container .box-right form .btn-claim:hover {
+  background-color: #58d49e;
+}
+.container .box-right form .smallprint {
+  text-align: center;
+  color: #b9b6d3;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+.container .box-right form .smallprint a {
+  text-decoration: none;
+  color: #FF7979;
+}
+
+@media (max-width: 1100px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container .box-left h1 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+  .container .box-left p {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 767px) {
+  body {
+    justify-content: flex-start;
+  }
+
+  .container {
+    width: 375px;
+    height: 5000px;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .container .box-left {
+    margin-top: 85px;
+    margin-bottom: 30px;
+    width: 327px;
+  }
+  .container .box-left h1 {
+    font-size: 28px;
+    line-height: 2rem;
+  }
+  .container .box-left p {
+    font-size: 16px;
+    margin-right: 0;
+  }
+  .container .box-right {
+    width: 327px;
+  }
+  .container .box-right .btn-try {
+    height: 88px;
+    padding: 20px;
+  }
+  .container .box-right .form {
+    justify-content: flex-start;
+  }
+  .container .box-right .form .form-control {
+    margin-top: 0px;
+  }
+  .container .box-right .form .form-control input {
+    margin-top: 0px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
