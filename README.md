@@ -63,23 +63,28 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 Used a separate file `_variables.scss` - maybe a little overkill in this case. 
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
 
-To see how you can add code snippets, see below:
+
+
+### Accessibility Issues and HTML Issues
+
+I got accessibility issues for the input fields: 
+
+*This textinput element does not have a name available to an accessibility API. Valid names are: label element, title undefined, aria-label undefined, aria-labelledby undefined.*
+
+Fixed it the following way: 
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<input type="text" id="firstname" name="firstname" aria-label="Input for first name" placeholder="First Name">
 ```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
+
+Then there was an HTML issue:
+
+**Consider avoiding viewport values that prevent users from resizing documents.**
+
+This one was easy to fix in the meta. 
+
+
 
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
@@ -96,5 +101,8 @@ Use this section to outline areas that you want to continue focusing on in futur
 - [Box Shadow Generator](https://css-box-shadow.tinytools.online/presets/material) - for form and button shadows 
 - [Brad Traversy JS Projects Course](https://subscription.packtpub.com/video/web_development/9781800563049) - Form validation 
 
+### Interesting Solutions
 
+- [Boedegoat](https://github.com/boedegoat/front-end-signup-form-master) - [Live](https://boedegoat-sign-up-form.netlify.app/)
+- [Palgramming](https://github.com/palgramming/Frontend_Mentor_Challenges/tree/master/intro_component_with_signup_form) - [Live](https://palgramming.github.io/Frontend_Mentor_Challenges/intro_component_with_signup_form/index.html)
  
