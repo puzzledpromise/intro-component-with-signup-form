@@ -85,6 +85,6 @@ This one was easy to fix in the meta.
 
 ### Interesting Solutions
 
-- [Boedegoat](https://github.com/boedegoat/front-end-signup-form-master) - [Live](https://boedegoat-sign-up-form.netlify.app/)
-- [Palgramming](https://github.com/palgramming/Frontend_Mentor_Challenges/tree/master/intro_component_with_signup_form) - [Live](https://palgramming.github.io/Frontend_Mentor_Challenges/intro_component_with_signup_form/index.html)
+- Interesting solution for the label: [Boedegoat](https://github.com/boedegoat/front-end-signup-form-master) - [Live](https://boedegoat-sign-up-form.netlify.app/) 
+- Overall well done: [Palgramming](https://github.com/palgramming/Frontend_Mentor_Challenges/tree/master/intro_component_with_signup_form) - [Live](https://palgramming.github.io/Frontend_Mentor_Challenges/intro_component_with_signup_form/index.html)
  
